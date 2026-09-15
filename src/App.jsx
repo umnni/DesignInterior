@@ -29,7 +29,7 @@ function PageLayout({ children }) {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/DesignInterior">
       <Routes>
         <Route
           path="/"
