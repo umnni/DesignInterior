@@ -5,7 +5,7 @@
       --text-heading: #66625f;
       --text-subheading: #77726f;
       --text-body: #56524f;
-      --accent-red: #c12323;
+      --accent-red: var(--brand-primary);
       --accent-gold: #d7b46a;
     }
 
@@ -48,7 +48,7 @@
     }
 
     .aboutPage .nav-link:hover {
-      color: #c12323;
+      color: var(--brand-primary);
     }
 
     .aboutPage #mobileMenu {
@@ -444,7 +444,7 @@
   background: var(--accent-red);
   border: 1px solid var(--accent-red);
   border-radius: 999px;
-  box-shadow: 0 10px 24px rgba(193, 35, 35, 0.2);
+  box-shadow: 0 10px 24px rgba(44, 85, 55, 0.2);
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 0.17em;
@@ -461,7 +461,7 @@
   background: var(--accent-red);
   border-color: var(--accent-red);
   transform: translateY(-2px);
-  box-shadow: 0 14px 30px rgba(193, 35, 35, 0.3);
+  box-shadow: 0 14px 30px rgba(44, 85, 55, 0.3);
 }
 
 .aboutPage .premium-menu-btn {
@@ -916,7 +916,7 @@
 .aboutPage .footer-social-link--whatsapp { background: #25d366; }
 .aboutPage .footer-social-link--facebook { background: #1877f2; }
 .aboutPage .footer-social-link--linkedin { background: #0a66c2; }
-.aboutPage .footer-social-link--instagram { background: radial-gradient(circle at 30% 105%, #fdf497 0 9%, #fd5949 31%, #d6249f 58%, #285aeb 88%); }
+.aboutPage .footer-social-link--instagram { background: linear-gradient(135deg, var(--brand-gold), var(--brand-primary)); }
 .aboutPage .footer-social-link:hover { color: #ffffff; transform: translateY(-4px) scale(1.06); box-shadow: 0 15px 28px rgba(0,0,0,0.22); }
 
 .aboutPage .footer-bottom-line {
@@ -1152,7 +1152,7 @@
 
 /* CANONICAL SITE HEADER — BEGIN */
 :root {
-  --accent-red: #c12323;
+  --accent-red: var(--brand-primary);
   --accent-gold: #cfa63a;
   --header-grey: #6f747b;
   --header-grey-dark: #454a50;
@@ -1323,10 +1323,10 @@
   gap: 9px !important;
   padding: 0 20px !important;
   color: #ffffff !important;
-  background: #c12323 !important;
-  border: 1px solid #c12323 !important;
+  background: var(--brand-primary) !important;
+  border: 1px solid var(--brand-primary) !important;
   border-radius: 999px !important;
-  box-shadow: 0 10px 24px rgba(193, 35, 35, .20) !important;
+  box-shadow: 0 10px 24px rgba(44, 85, 55, .20) !important;
   font-family: var(--font-body), Montserrat, sans-serif !important;
   font-size: 9px !important;
   font-weight: 700 !important;
@@ -1340,9 +1340,9 @@
 
 .aboutPage .premium-header-cta:hover {
   color: #ffffff !important;
-  background: #c12323 !important;
-  border-color: #c12323 !important;
-  box-shadow: 0 14px 30px rgba(193, 35, 35, .28) !important;
+  background: var(--brand-primary) !important;
+  border-color: var(--brand-primary) !important;
+  box-shadow: 0 14px 30px rgba(44, 85, 55, .28) !important;
   transform: translateY(-2px) !important;
 }
 
@@ -1463,8 +1463,8 @@
   margin-top: 20px !important;
   padding: 0 18px !important;
   color: #ffffff !important;
-  background: #c12323 !important;
-  border: 1px solid #c12323 !important;
+  background: var(--brand-primary) !important;
+  border: 1px solid var(--brand-primary) !important;
   border-radius: 999px !important;
   font-family: var(--font-body), Montserrat, sans-serif !important;
   font-size: 10px !important;

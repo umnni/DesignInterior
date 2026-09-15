@@ -4,6 +4,28 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* =========================================
+   SPACE DECOR BELLE — GLOBAL BRAND COLORS
+========================================= */
+
+:root {
+  --brand-primary: #2c5537;
+  --brand-primary-dark: #1f432a;
+  --brand-primary-light: #4f7659;
+
+  --brand-gold: #d7b46a;
+
+  --brand-heading: #5f5a57;
+  --brand-text: #2e2d35;
+  --brand-white: #ffffff;
+}
+
+
+/* =========================================
+   GLOBAL
+========================================= */
+
 html {
   scroll-behavior: smooth;
 }
@@ -12,8 +34,10 @@ body {
   margin: 0;
   min-width: 320px;
   overflow-x: hidden;
-  background: #ffffff;
-  color: #2e2d35;
+
+  background: var(--brand-white);
+  color: var(--brand-text);
+
   font-family: "Montserrat", sans-serif;
 }
 

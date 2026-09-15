@@ -80,7 +80,7 @@
   width: min(420px, 72%);
   height: 3px;
   margin: 28px auto 24px;
-  background: linear-gradient(90deg, transparent, #c12323 15%, #c12323 85%, transparent);
+  background: linear-gradient(90deg, transparent, var(--brand-primary) 15%, var(--brand-primary) 85%, transparent);
 }
 
 .legalHeroContent > p:last-child {
@@ -168,7 +168,7 @@
 }
 
 .legalContact a:hover {
-  color: #c12323;
+  color: var(--brand-primary);
 }
 
 @media (max-width: 900px) {

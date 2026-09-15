@@ -1,4 +1,4 @@
-:root{--c-red:#c92327;--c-gold:#d7b46a;--c-ink:#2f3947;--c-muted:#716d67;--c-paper:#f6f4ef;--c-serif:"Cormorant Garamond",serif;--c-sans:"Montserrat",sans-serif}
+:root{--c-red:var(--brand-primary);--c-gold:#d7b46a;--c-ink:#2f3947;--c-muted:#716d67;--c-paper:#f6f4ef;--c-serif:"Cormorant Garamond",serif;--c-sans:"Montserrat",sans-serif}
 .consultationPage,.consultationPage *{box-sizing:border-box}
 .consultationPage{width:100%;overflow-x:clip;color:var(--c-ink);background:#fff;font-family:var(--c-sans)}
 .consultationPage img{display:block;max-width:100%}.consultationPage a{color:inherit;text-decoration:none}
@@ -42,10 +42,10 @@
 .consultationPage .form-field::placeholder{color:#9a9da2}.consultationPage textarea.form-field{min-height:150px;padding-top:16px;resize:vertical}
 .consultationPage .choice-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.consultationPage .choice-card{position:relative;min-width:0;cursor:pointer}.consultationPage .choice-card input{position:absolute;opacity:0;pointer-events:none}
 .consultationPage .choice-card-content{display:flex;min-height:100px;flex-direction:column;align-items:flex-start;justify-content:space-between;padding:16px;color:#585b60;background:#fdfcf9;border:1px solid #ded8cd;border-radius:14px;font-size:9px;font-weight:600;letter-spacing:.1em;text-transform:uppercase}.consultationPage .choice-card-content i{color:var(--c-red);font-size:25px}
-.consultationPage .choice-card input:checked+.choice-card-content{color:var(--c-red);background:#fff7f7;border-color:var(--c-red);box-shadow:0 8px 18px rgba(201,35,39,.09)}
+.consultationPage .choice-card input:checked+.choice-card-content{color:var(--c-red);background:#f4f8f5;border-color:var(--c-red);box-shadow:0 8px 18px rgba(44, 85, 55, .09)}
 .consultationPage .choice-error,.consultationPage .form-status{min-height:18px;color:var(--c-red);font-size:11px}
 .consultationPage .consent-row{display:flex;width:auto;align-items:flex-start;gap:12px;margin:32px 40px 0;color:#696b70;font-size:12px;line-height:1.65}.consultationPage .consent-row input{width:18px;height:18px;flex:0 0 18px;margin-top:1px;accent-color:var(--c-red)}
-.consultationPage .submit-button{display:flex;width:calc(100% - 80px);min-height:60px;align-items:center;justify-content:center;gap:10px;margin:23px 40px 0;padding:0 24px;color:#fff;background:var(--c-red);border:0;border-radius:999px;box-shadow:0 15px 28px rgba(201,35,39,.2);font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;cursor:pointer}
+.consultationPage .submit-button{display:flex;width:calc(100% - 80px);min-height:60px;align-items:center;justify-content:center;gap:10px;margin:23px 40px 0;padding:0 24px;color:#fff;background:var(--c-red);border:0;border-radius:999px;box-shadow:0 15px 28px rgba(44, 85, 55, .2);font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;cursor:pointer}
 .consultationPage .form-status{margin:12px 40px 28px}
 
 /* Sidebar */

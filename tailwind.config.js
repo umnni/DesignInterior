@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        customRed: "#c12323",
+        customRed: "var(--brand-primary)",
         customGold: "#cfa63a",
         customDark: "#1a1a1a",
         customLightGray: "#f8f8f8",

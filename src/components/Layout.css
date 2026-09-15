@@ -1,7 +1,7 @@
 :root {
   --body-font: "Montserrat", sans-serif;
   --heading-font: "Cormorant Garamond", serif;
-  --accent-red: #c12323;
+  --accent-red: var(--brand-primary);
   --accent-gold: #cfa63a;
   --dark: #171717;
   --footer-dark: #222222;
@@ -108,7 +108,7 @@
     90deg,
     transparent 0%,
     rgba(193, 35, 35, 0.45) 20%,
-    #c12323 50%,
+    var(--brand-primary) 50%,
     rgba(193, 35, 35, 0.45) 80%,
     transparent 100%
   );
@@ -1293,4 +1293,118 @@
     height: 50px;
     border-radius: 14px;
   }
+}
+
+/* UPDATED FOOTER LOGO AND CONSULTATION ADDRESS */
+
+.sdbFooterLogoBox {
+  display: flex;
+  width: 100%;
+  max-width: 355px;
+  min-height: 105px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 28px;
+  padding: 13px 24px;
+  background: #ffffff;
+  border-radius: 21px;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.14);
+}
+
+.sdbFooterLogoBox img {
+  display: block;
+  width: auto;
+  max-width: 210px;
+  height: 76px;
+  object-fit: contain;
+}
+
+.sdbFooterRight {
+  justify-content: flex-start;
+}
+
+.sdbFooterRight .sdbFollowHeading {
+  margin-top: 5px;
+}
+
+.sdbConsultationCard {
+  width: 100%;
+  max-width: 355px;
+  min-height: 160px;
+  margin: 34px auto 0;
+  padding: 22px;
+  text-align: left;
+}
+
+.sdbConsultationCard .sdbStudioIcon {
+  flex-basis: 58px;
+  width: 58px;
+  height: 58px;
+}
+
+.sdbConsultationCard .sdbStudioIcon svg {
+  width: 25px;
+  height: 25px;
+}
+
+@media (max-width: 1050px) {
+  .sdbFooterLogoBox {
+    max-width: 310px;
+  }
+
+  .sdbConsultationCard {
+    padding: 19px 16px;
+    gap: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .sdbFooterLogoBox {
+    max-width: 235px;
+    min-height: 98px;
+    margin: 0 auto 32px;
+    padding: 12px 20px;
+  }
+
+  .sdbFooterLogoBox img {
+    max-width: 190px;
+    height: 70px;
+  }
+
+  .sdbFooterRight .sdbFollowHeading {
+    margin-top: 0;
+  }
+
+  .sdbConsultationCard {
+    max-width: 355px;
+    min-height: auto;
+    margin: 32px auto 0;
+    padding: 22px;
+  }
+}
+/* BOOK CONSULTATION — NO RED */
+.premiumHeaderCta,
+.premium-header-cta {
+  background: var(--brand-primary) !important;
+  border-color: var(--brand-primary) !important;
+  box-shadow: 0 10px 24px rgba(44, 85, 55, 0.20) !important;
+}
+
+.premiumHeaderCta:hover,
+.premium-header-cta:hover {
+  color: #ffffff !important;
+  background: var(--brand-primary-dark) !important;
+  border-color: var(--brand-primary-dark) !important;
+  box-shadow: 0 14px 30px rgba(44, 85, 55, 0.28) !important;
+}
+/* NAV ACTIVE/HOVER — REMOVE RED GLOW */
+.navActiveLine {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--brand-primary),
+    transparent
+  ) !important;
+
+  box-shadow: none !important;
 }
